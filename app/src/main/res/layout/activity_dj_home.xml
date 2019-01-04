@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#faf8f8"
+    android:layout_height="match_parent"
+    tools:context=".DjHome">
+
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_Bar_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/main_page_toolbar"
+            layout="@layout/app_bar_layout">
+
+        </include>
+        <android.support.design.widget.TabLayout
+            android:id="@+id/main_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+
+        </android.support.design.widget.TabLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="0dp"
+        android:layout_below="@id/app_Bar_Layout"
+        android:padding="10dp"
+        android:background="@drawable/layour_background"
+        >
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/main_tabs_pages"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/app_Bar_Layout"
+        android:layout_height="wrap_content">
+
+    </android.support.v4.view.ViewPager>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:background="#979090"
+        android:layout_marginBottom="0dp"
+        android:gravity="bottom"
+        android:layout_alignParentBottom="true"></LinearLayout>
+
+</RelativeLayout>

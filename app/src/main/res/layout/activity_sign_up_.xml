@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5f89c7"
+    tools:context=".SignUp_Activity">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign-Up"
+        android:textStyle="bold"
+        android:textSize="32sp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:layout_marginTop="120dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:textColor="#fff"/>
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:background="#fff"
+        android:hint=" (+267)  7- --- ---"
+        android:paddingLeft="5dp"
+        android:inputType="number"
+        android:id="@+id/mogala"
+        android:textSize="25dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="50dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mogala"
+        android:text="done !"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="40dp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:background="#1bfa17"/>
+</RelativeLayout>
